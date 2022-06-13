@@ -1,16 +1,13 @@
 {
     "type": "library",
-    "name": "tienhm7/template-php-lib",
-    "description": "Template for repository helper, library - Basic, Simple and Lightweight",
+    "name": "tienhm7/shorten-url",
+    "description": "Shorten Url",
     "keywords": [
-        "template",
-        "helper",
-        "library",
-        "php"
+        "utils",
+        "shorten-url"
     ],
-    "homepage": "https://github.com/tienhm7/template-php-lib",
-    "license": "MIT",
-    "minimum-stability": "stable",
+    "homepage": "https://github.com/tienhm7/shorten-url",
+    "license": "GPL-3.0",
     "authors": [
         {
             "name": "Hoang Manh Tien",
@@ -20,14 +17,12 @@
         }
     ],
     "require": {
-        "php": ">=5.6"
+        "ext-curl": "*",
+        "ext-json": "*"
     },
     "autoload": {
         "psr-4": {
-            "tienhm7\\Libraries\\TemplateREPLACE\\": "src/"
-        },
-        "files": [
-            "helpers/helpers.php"
-        ]
+            "tienhm7\\ShortenUrl\\": "src/"
+        }
     }
 }
